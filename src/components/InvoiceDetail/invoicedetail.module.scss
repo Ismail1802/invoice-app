@@ -1,0 +1,112 @@
+.detail {
+  padding: 1.5rem;
+  background-color: var(--invColor);
+  color: var(--textColor);
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.upper-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.id {
+  font-size: 1rem;
+}
+.bold {
+  font-weight: 600;
+}
+.lower-info {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  > div {
+    margin-right: 5rem;
+  }
+  > div:nth-child(2) {
+    margin-right: auto;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+}
+.dates {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.street {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--checkbox);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  p:first-child {
+    flex: 2;
+    text-align: left;
+  }
+  p {
+    flex: 1;
+    text-align: right;
+  }
+}
+.item-header {
+  font-size: 0.9rem;
+}
+.amount-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--amount);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  p:first-child {
+    font-weight: 300;
+  }
+}
+.total {
+  font-size: 1.5rem;
+}
+.item-details {
+  display: flex;
+  gap: 5rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .detail {
+    margin: 2rem auto;
+  }
+  .upper-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .lower-info {
+    flex-wrap: wrap;
+  }
+  .items-mob {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--checkbox);
+    border-radius: 0.2rem 0.2rem 0 0;
+  }
+}

@@ -1,0 +1,53 @@
+.btn-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  button {
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.discard-btn {
+  background-color: #252945;
+  padding: 0.7rem 1.1rem;
+}
+.draft-btn {
+  background-color: #373b53;
+  padding: 0.7rem 1.2rem;
+  margin-right: 0.5rem;
+}
+.save-btn {
+  background-color: #7c5dfa;
+  padding: 0.7rem 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .save-btn,
+  .draft-btn,
+  .discard-btn {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .discard-btn,
+  .save-btn,
+  .draft-btn {
+    font-size: 0.7rem;
+    padding: 0.8rem;
+  }
+  .btn-cont {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

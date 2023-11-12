@@ -1,0 +1,102 @@
+.form {
+  position: absolute;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  width: 45%;
+  padding: 3rem;
+  height: 100vh;
+
+  left: 6.5rem;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.form::-webkit-scrollbar {
+  width: 7px;
+}
+.form::-webkit-scrollbar-track {
+  background: var(--bgColor);
+}
+.form::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+.title {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.list-title {
+  color: #777f98;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.total-input {
+  padding: 0.7rem;
+  width: 100%;
+  color: var(--textColor);
+  background-color: unset;
+  border: none;
+  margin-top: 0.3rem;
+  border-radius: 0.25rem;
+}
+.total-cont {
+  position: relative;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  margin: 1.5rem 0;
+  background-color: var(--invColor);
+  font-weight: 500;
+  color: var(--textColor);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  img {
+    margin-bottom: 0.1rem;
+    margin-right: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .form {
+    height: calc(100vh - 4.5rem);
+    width: 45%;
+    top: 5rem;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .form {
+    width: 70%;
+    position: fixed;
+  }
+
+  .add-btn {
+    padding: 0.7rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .form {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 3;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .add-btn {
+    font-size: 0.8rem;
+  }
+}

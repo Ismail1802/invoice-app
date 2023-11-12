@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-theme {
+  --bgColor: #141625;
+  --textColor: white;
+  --invColor: #1e2139;
+  --checkboxes: #1e2139;
+  --checkbox: #252945;
+  --scrollbar: #1e2139;
+  --amount: black;
+}
+.light-theme {
+  --bgColor: white;
+  --textColor: black;
+  --invColor: white;
+  --checkboxes: #dfe3fa;
+  --checkbox: white;
+  --scrollbar: rgb(194, 194, 194);
+  --amount: #373b53;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#root {
+  display: flex;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  background-color: var(--bgColor);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--textColor);
+  -webkit-box-shadow: 0 0 0px 1000px var(--invColor) inset;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.date-cont,
+.terms-cont {
+  margin: 1.5rem 0;
+}
+.bg {
+  position: fixed;
+  inset: 0;
+  cursor: default;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.bill-title {
+  color: #7c5dfa;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.location {
+  display: flex;
+  gap: 2rem;
+}
+.datepicker {
+  width: 100%;
+}
+.datepicker div {
+  font-weight: 600;
+  font-family: "League Spartan", sans-serif;
+  color: var(--textColor);
+  background-color: var(--invColor);
+}
+.datepicker div svg path {
+  fill: #7e88c3;
+}
+.select {
+  background-color: var(--invColor);
+}
+.select div {
+  color: var(--textColor);
+  font-weight: 600;
+}
+.select svg path {
+  fill: #7e88c3;
+}
+@media screen and (max-width: 1440px) {
+  #root {
+    flex-direction: column;
+  }
+}

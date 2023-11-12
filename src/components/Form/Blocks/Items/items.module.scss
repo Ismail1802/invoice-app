@@ -1,0 +1,19 @@
+.item-list {
+  position: relative;
+  display: flex;
+
+  gap: 1rem;
+}
+.trash-icon {
+  position: absolute;
+  right: 1.2rem;
+  top: 3rem;
+
+  cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  .item-list {
+    flex-direction: column;
+    gap: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.input {
+  padding: 0.7rem;
+  width: 100%;
+  color: var(--textColor);
+  background-color: var(--invColor);
+  border: 1px solid #252945;
+  margin-top: 0.3rem;
+  border-radius: 0.25rem;
+}
+.input-cont {
+  display: flex;
+  justify-content: flex-start;
+
+  flex-direction: column;
+  margin-top: 1rem;
+  font-weight: 500;
+  &.qty {
+    width: 30%;
+  }
+  &.price {
+    width: 40%;
+  }
+  &.name {
+    width: 70%;
+  }
+  &.total {
+    input {
+      background-color: unset;
+      border: none;
+    }
+  }
+}
+.error {
+  color: red;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 450px) {
+  .input-cont {
+    &.qty,
+    &.price,
+    &.name {
+      width: 100%;
+    }
+  }
+}

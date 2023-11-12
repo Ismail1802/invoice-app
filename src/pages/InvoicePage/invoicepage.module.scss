@@ -1,0 +1,144 @@
+.invoicepage {
+  margin: 0 auto;
+  width: 730px;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+}
+.back {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: var(--textColor);
+  img {
+    margin-bottom: 0.3rem;
+  }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--invColor);
+  color: var(--textColor);
+  padding: 2rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 0.5rem;
+}
+.status-cont {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.dot-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  background-color: #33d6a0b4;
+  &.paid {
+    color: #33d69f;
+    background-color: rgba(51, 214, 159, 0.0571);
+    .dot {
+      background-color: #33d69f;
+    }
+  }
+  &.pending {
+    background: rgba(255, 143, 0, 0.0571);
+    color: #ff8f00;
+    .dot {
+      background-color: #ff8f00;
+    }
+  }
+  &.draft {
+    background: rgba(223, 227, 250, 0.0571);
+    color: #fff;
+    .dot {
+      background-color: #fff;
+    }
+  }
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-bottom: 0.15rem;
+  background-color: red;
+}
+.btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.edit-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: #252945;
+  color: #fff;
+  cursor: pointer;
+}
+.add-btn {
+  padding: 0.7rem 1.5rem;
+  background: #ec5757;
+  border: none;
+  border-radius: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.mark-btn {
+  background: #7c5dfa;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .invoicepage {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .invoicepage {
+    width: 90%;
+  }
+  .status-cont {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .btn-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--checkboxes);
+    width: 100%;
+    div {
+      button {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 376px) {
+  .edit-btn {
+    padding: 0.8rem 1.5rem;
+  }
+  .add-btn {
+    padding: 0.5rem 1rem;
+  }
+  .mark-btn {
+    padding: 0.7rem;
+  }
+}

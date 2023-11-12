@@ -1,0 +1,16 @@
+.homepage {
+  width: 730px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  align-self: flex-start;
+}
+@media screen and (max-width: 1440px) {
+  .homepage {
+    padding: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .homepage {
+    width: 90%;
+  }
+}
