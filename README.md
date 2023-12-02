@@ -1,6 +1,6 @@
 # React + TypeScript + Vite
 
-https://ismail1802.github.io/invoices/
+[https://ismail1802.github.io/invoices/](https://ismail1802.github.io/invoice-app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
